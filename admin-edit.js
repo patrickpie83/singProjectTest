@@ -49,7 +49,7 @@ addBtn.addEventListener("click",function(){
         adminEditinit(); 
         alert("新增成功");
         //回到後台編輯頁
-        window.location.href="http://localhost:8080/admin-page.html";
+        window.location.href="admin-page.html";
     })
     .catch(function(err){
         console.log(err);

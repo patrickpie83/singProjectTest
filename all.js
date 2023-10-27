@@ -28,7 +28,7 @@ function signUp(){
     })
     .then(function(res){
         alert("註冊成功");
-        window.location.href ="http://localhost:8080/index.html";
+        window.location.href ="index.html";
     })
     .catch(function(err){
         console.log(err);

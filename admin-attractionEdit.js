@@ -24,5 +24,5 @@ modifyBtn.addEventListener("click",function(){
         "attractionContent":editAttractionContent.value
     })
     alert("修改成功");
-    window.location.href="http://localhost:8080/admin-page.html";
+    window.location.href="admin-page.html";
 })
