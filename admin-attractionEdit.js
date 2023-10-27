@@ -3,7 +3,7 @@ let editAttractionContent=document.querySelector("#editAttractionContent");
 let modifyBtn=document.querySelector(".modifyBtn");
 
 const id = location.href.split("=")[1];//把當前網址切割，取[1]的值
-const _url = "http://localhost:3000/"; // 設定伺服器網址
+const _url = "https://singlepreproject.onrender.com/"; // 設定伺服器網址
 
 //取得路由的內容
 axios.get(`${_url}posts/${id}`)

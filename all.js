@@ -6,7 +6,7 @@ let loginEmail=document.querySelector("#loginEmail");
 let loginPassword=document.querySelector("#loginPassword");
 let loginBtn=document.querySelector(".loginBtn");
 
-const _url = "http://localhost:3000/"; // 設定伺服器網址
+const _url = "https://singlepreproject.onrender.com/"; // 設定伺服器網址
 
 //註冊按鈕監聽事件
 //////未來要遍歷迴圈判斷會員是否存在，出現警告
@@ -58,11 +58,11 @@ function login(){
         //同時依照身份，admin或user，將token紀錄下來，在跳轉網址顯示頁面時會檢查(後台網址、景點列表網址)
         if(res.data.user.role==="admin"){
             localStorage.setItem("adminToken",res.data.accessToken);
-            window.location.href ="http://localhost:8080/admin-page.html";
+            window.location.href ="admin-page.html";
         }else{
             localStorage.setItem("userToken",res.data.accessToken);
             localStorage.setItem("userId",res.data.user.id);
-            window.location.href ="http://localhost:8080/attractionList.html";
+            window.location.href ="attractionList.html";
         }
         
     })

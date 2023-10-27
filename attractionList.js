@@ -1,5 +1,5 @@
 let attractionListBody=document.querySelector(".attractionListBody");
-const _url = "http://localhost:3000/"; // 設定伺服器網址
+const _url = "https://singlepreproject.onrender.com/"; // 設定伺服器網址
 let logout=document.querySelector(".logout");
 let data = [];
 

@@ -3,7 +3,7 @@ let logout=document.querySelector(".logout");
 let collectBtn=document.querySelector(".collectBtn");
 
 const id = location.href.split("=")[1];//取出景點id_把當前網址切割，取[1]的值 (此id為字串)
-const _url = "http://localhost:3000/"; // 設定伺服器網址
+const _url = "https://singlepreproject.onrender.com/"; // 設定伺服器網址
 
 if(!localStorage.getItem("userToken")){
   collectBtn.setAttribute("class","d-none");

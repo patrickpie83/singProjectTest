@@ -8,7 +8,7 @@ let attractionListTab=document.querySelector("#attractionList-tab");
 let logout=document.querySelector(".logout");
 let body=document.querySelector("body");
 
-const _url = "http://localhost:3000/"; // 設定伺服器網址
+const _url = "https://singlepreproject.onrender.com/"; // 設定伺服器網址
 
 let data = [];
 
