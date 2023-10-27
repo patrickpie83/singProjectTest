@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container py-2 d-flex">
+            <h2 class="h1">後台</h2>
+            <ul class="nav nav-pills ms-auto" id="pills-tab" role="tablist">
+                <li class="nav-item me-3" role="presentation">
+                    <button onclick="location.href='http://localhost:8080/admin-page.html';" class="nav-link active" type="button" id="adminEdit-tab" data-bs-toggle="pill" data-bs-target="#adminEdit" role="tab" aria-controls="adminEdit" aria-selected="true">回到後台</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" type="button" id="attractionList-tab" data-bs-toggle="pill" data-bs-target="#attractionList" role="tab" aria-controls="attractionList" aria-selected="false">回到景點首頁</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" type="button" id="addAttraction-tab" data-bs-toggle="pill" data-bs-target="#addAttraction" role="tab" aria-controls="addAttraction" aria-selected="false">新增景點</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="index.html" class="nav-link" type="button">登出</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <!-- 編輯個別景點的模板 -->
+    <div class="container">
+        <h2 class="pb-3">編輯景點</h2>
+        <label for="editAttractionTitle" class="form-label">標題</label>
+        <input type="text" class="form-control mb-3" id="editAttractionTitle" >
+        <label for="editAttractionContent" class="form-label">內文</label>
+        <textarea type="text" class="form-control mb-3" id="editAttractionContent" style="height: 200px;"></textarea>
+        <button class="btn btn-primary modifyBtn">修改資料</button>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="admin-attractionEdit.js"></script>
+</body>
+</html>

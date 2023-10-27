@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "email": "user@mail.com",
+      "password": "$2a$10$5djwJUzqayDr4kMdVFGISe9ac5sx0gaP0NdsZUjgWs/1vQ0PkPfZm",
+      "collectPostId": [],
+      "id": 1
+    },
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$PCsLl51kITuvupCikRis.O1xe/N5/xj.Bl/UHsq4NFKFDllGq.Bpu",
+      "id": 2,
+      "collectPostId": [],
+      "role": "admin"
+    },
+    {
+      "email": "patrick@mail.com",
+      "password": "$2a$10$QOZQJKmrneSWc.aLxX.TQu5MguNX/u0fC4WnmgFXYBiJ2obOOjBDC",
+      "collectPostId": [],
+      "id": 3
+    },
+    {
+      "email": "user01@mail.com",
+      "password": "$2a$10$XdwVa.QmVWzzQgQIjFKBYe9DEsQ0QuJzuMbaDMZofX2Bbrvb/zZpi",
+      "collectPostId": [
+        "2"
+      ],
+      "id": 4
+    },
+    {
+      "email": "user02@mail.com",
+      "password": "$2a$10$/TpfUut55rFwKSHDEOni2OZdX.PrC1PTTT4L.XhaOAcYktPhn6DV6",
+      "collectPostId": [
+        "1",
+        "2"
+      ],
+      "id": 5
+    },
+    {
+      "email": "user03@mail.com",
+      "password": "$2a$10$R2ScQ2/rfRdVkeyhhFpm5OQV4W1bYgystAgJnxpkj1XJ7BMCyoFe2",
+      "collectPostId": [],
+      "id": 6
+    },
+    {
+      "email": "user04@mail.com",
+      "password": "$2a$10$zu01tgjcPFXiWfPR/Bx3qe3/TgEHC7IDdlVJ15tuc6Nca.al.RCV.",
+      "collectPostId": [
+        "1"
+      ],
+      "id": 7
+    },
+    {
+      "email": "user05@mail.com",
+      "password": "$2a$10$rG1stxQVD8x4VwVUkzsAH.r7r.9GyTLUhJpnUUoWaHIilzw5YigQu",
+      "collectPostId": [],
+      "id": 8
+    },
+    {
+      "email": "user06@mail.com",
+      "password": "$2a$10$K1cDAcOhIjd.0jQkxGu1tONxPgfk9WDPKi4/jM4HhSet2XKZtUfwy",
+      "collectPostId": [],
+      "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "attractionTitle": "帆船鼻",
+      "attractionContent": "帆船鼻位於綠島東南角，平坦的海岬台地上綠草如茵，與四周的藍天碧海，構成看不到綠意與藍色盡頭的極佳的景緻，草原邊緣懸崖可以俯視朝日溫泉與海參坪，也是綠島居高臨下欣賞日出、月昇，沐浴海風的最佳景點之一。\n從帆船鼻往北眺望，遠處海參坪一帶的海崖及嵯峨奇岩，矗立海岸；近處能夠居高臨下俯視朝日溫泉的溫泉池及新穎的建築設施；往西為白沙灣的大片珊瑚裙礁，天氣晴朗時，南方海天交接處可見到蘭嶼，也是綠島極佳的日出賞景點，美妙景致讓人留連忘返。",
+      "id": 1
+    },
+    {
+      "attractionTitle": "哈巴狗與睡美人岩",
+      "attractionContent": "海參坪位於綠島東部海岸之中段的海灣，由於礁岸地形以及海水沖蝕作用，因此奇岩密佈、風景秀麗，吸引不少旅人前來探訪。",
+      "id": 2
+    },
+    {
+      "attractionTitle": "紫坪",
+      "attractionContent": "紫坪位在綠島最南方，緊鄰「綠島露營區」。從露營區旁的步道，可通往海岸邊的潟湖「紫坪」。「紫坪」是一處由珊瑚礁構成的潮池，也是綠島著名的潟湖所在地，有全綠島最完整的潟湖地形以及珊瑚礁植群，更有茂盛的植物水芫花和珍貴的陸寄居蟹。",
+      "id": 3
+    },
+    {
+      "attractionTitle": "小琉球",
+      "attractionContent": "位於屏東縣東港西南方的小琉球，是臺灣離島中唯一的珊瑚礁島。",
+      "id": 4
+    },
+    {
+      "attractionTitle": "西子灣",
+      "attractionContent": "西子灣位於高雄市西側，壽山西南端山麓下，北瀕萬壽山，南臨旗津半島，為一黃澄碧藍的海水浴場，是一處以夕陽美景及天然礁石聞名的灣澳。",
+      "id": 5
+    },
+    {
+      "attractionTitle": "打狗英國領事館",
+      "attractionContent": "建於西元1865年，至今已有150多年歷史，地理位置特殊，座落在海天一色的西子灣山上，可屬美景天成。坐靠打鼓山、前扼高雄港進出之大船、右看西子灣日落、左抱高雄港全景。",
+      "id": 8
+    }
+  ]
+}
