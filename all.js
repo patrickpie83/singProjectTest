@@ -1,3 +1,7 @@
+//首頁為註冊登入會員頁
+//註冊會員的功能
+//登入會員的功能及判斷身份跳轉至指定頁面
+
 let signUpEmail=document.querySelector("#signUpEmail");
 let signUpPassword=document.querySelector("#signUpPassword");
 let signUpBtn=document.querySelector(".signUpBtn");
@@ -55,7 +59,7 @@ function login(){
     .then(function(res){
         alert("登入成功");
         //判斷身份別，若是admin為管理者，會進入後台 (role由手動修改db.json加入)
-        //同時依照身份，admin或user，將token紀錄下來，在跳轉網址顯示頁面時會檢查(後台網址、景點列表網址)
+        //同時依照身份，admin或user，將token紀錄下來，在跳轉網址顯示頁面(後台網址、景點列表網址)時會檢查
         if(res.data.user.role==="admin"){
             localStorage.setItem("adminToken",res.data.accessToken);
             window.location.href ="admin-page.html";

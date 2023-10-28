@@ -1,3 +1,6 @@
+//使用者個人收藏頁
+//遍歷景點資料庫，呈現使用者有收藏的景點
+
 let logout=document.querySelector(".logout");
 let collectListBody=document.querySelector(".collectListBody");
 const _url = "https://singlepreproject.onrender.com/"; // 設定伺服器網址
@@ -12,26 +15,28 @@ axios.get(`${_url}posts`)
     data=response.data;
 })   
 
+//取得使用者的收藏景點id於collectPostIdArr
 function init(){
-    //取得使用者的收藏景點id於collectPostIdArr
     axios.get(`${_url}users/${userId}`)
     .then(function(response){
         collectPostIdArr=response.data.collectPostId; 
+        //呼叫渲染函式
         renderData();
     })
 }
 
 init();
 
-
-
+//渲染函式
 function renderData(){
     let id;
     let collectListStr= '';
+    //將所有景點資料遞迴，若是使用者的收藏id就顯示出來
     data.forEach(function (item,index){
-        //item.id為number型態
+        //item.id(posts的id屬性)原為number型態
+        //景點id先轉為string型態，因為使用者的收藏景點id為string型態，才能判斷此值是否有包含在陣列內
         id=item.id.toString();
-        let isCollect=collectPostIdArr.includes(id);
+        let isCollect=collectPostIdArr.includes(id);//若使用者的收藏景點陣列有包含遞迴當前的景點id，則為true
         if(isCollect==true){
             collectListStr+=
             `<div class="col-sm-3 mb-3">
