@@ -9,14 +9,20 @@ let userId=localStorage.getItem("userId");
 let collectPostIdArr = [];
 let data = [];
 
-//取得景點的所有資料
-axios.get(`${_url}posts`)
-.then(function(response){
-    data=response.data;
-})   
+
+init();
 
 //取得使用者的收藏景點id於collectPostIdArr
 function init(){
+
+    // console.log(axios.get(`${_url}posts`));
+    //取得景點的所有資料
+    axios.get(`${_url}posts`)
+    .then(function(response){
+        data=response.data;
+    })   
+    
+    
     axios.get(`${_url}users/${userId}`)
     .then(function(response){
         collectPostIdArr=response.data.collectPostId; 
@@ -25,7 +31,6 @@ function init(){
     })
 }
 
-init();
 
 //渲染函式
 function renderData(){
